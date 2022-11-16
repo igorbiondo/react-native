@@ -22,7 +22,7 @@ const UpdateItem = ({ route, navigation }) => {
 	};
 
 	if (route.params) {
-		itemId = route.params.itemId;
+		inputItemId = route.params.itemId;
 		console.log(itemId);
 	}
 
@@ -93,7 +93,7 @@ const UpdateItem = ({ route, navigation }) => {
 						<KeyboardAvoidingView behavior="padding" style={{ flex: 1, justifyContent: 'space-between' }}>
 							<Mytext text="Filtro de Item" />
 							<Mytextinput
-								value={String(itemId)}
+								value={String(inputItemId)}
 								placeholder={'Entre com o código do Item'}
 								style={{ padding: 10, color: '#fff' }}
 								onChangeText={(inputItemId) => setinputItemId(inputItemId)}
